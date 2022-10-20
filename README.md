@@ -10,9 +10,7 @@ Why Alogrithms matters:
 
 When applied to computing, an algorithm refers to the set of instructions given to a computer to achieve a particular task. When we write any code, then, we’re creating algorithms for the computer to follow and execute.
 
-Lets say we want to print elements in array. The first thing to realize is that this is an example of an algorithm. While it may not be fancy, any code that does anything at all is technically an algorithm—it’s a particular process for solving a problem. The algorithm we use to solve this problem is a for loop containing a print statement.
-
-How much memory our code consumes = space complexity , Hom much time it consumes = time complexity.
+While it may not be fancy, any code that does anything at all is technically an algorithm—it’s a particular process for solving a problem. Lets say we want to print elements in array. The algorithm we usually use to solve this problem is a for loop containing a print statement. How much memory our code consumes is determined by space complexity , Hom much time it consumes is determined by time complexity.
 
 We can also express algorithms using plain English to set out the details of the instructions we plan on providing the computer. There are some algorithms have efficient space complexity, some have efficient time complexity, some have both.
 
