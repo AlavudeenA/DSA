@@ -14,7 +14,7 @@ While it may not be fancy, any code that does anything at all is technically an 
 
 We can also express algorithms using plain English to set out the details of the instructions we plan on providing the computer. There are some algorithms have efficient space complexity, some have efficient time complexity, some have both.
 
-Read first 3 chapters - A Common-Sense Guide to Data Structures and Algorithms: Level Up Your Core Programming Skills - Jay Wengrow
+Read first 7 chapters - A Common-Sense Guide to Data Structures and Algorithms: Level Up Your Core Programming Skills - Jay Wengrow
 
 Why sorting matters:
 https://realpython.com/lessons/why-sorting-matters/
