@@ -28,12 +28,17 @@ We do this because we can never say definitively that any operation takes, say, 
 
 However, we can measure the speed of an operation in terms of how many computational steps it takes. If Operation A takes 5 steps, and Operation B takes 500 steps, we can assume that Operation A will always be faster than Operation B on all pieces of hardware. Measuring the number of steps is, therefore, the key to analyzing the speed of an operation.
 
-Let’s apply this to our grocery list array. Our example array begins at memory address 1010. So, if we told the computer to read the value at index 3, the computer would go through the following thought process:
+Let’s apply this to our grocery list array. Our example, lets say, array begins at memory address 1010. So, if we told the computer to read the value at index 3, the computer would go through the following thought process:
+
 
 The array begins with index 0, which is at memory address 1010.
+
 Index 3 will be exactly three slots past index 0.
+
 By logical extension, index 3 would be located at memory address 1013, since 1010 + 3 is 1013.
+
 Once the computer knows that index 3 is at memory address 1013, it can jump right there and see that it contains the value "dates".
+
 
 Read:
 
@@ -52,3 +57,15 @@ So, it turns out that for an array of five cells, the maximum number of steps li
 Another way of saying this is that for N cells in an array, linear search would take a maximum of N steps. In this context, N is just a variable that can be replaced by any number.
 
 In any case, it’s clear that searching is less efficient than reading, since searching can take many steps, while reading always takes just one step no matter the size of the array.
+
+Insert:
+
+The efficiency of inserting a new piece of data into an array depends on where within the array you’re inserting it.
+
+Let’s say we want to add "figs" to the end of our shopping list. Such an insertion takes just one step.
+
+This is true due to another fact about computers: when allocating an array, the computer always keeps track of the array’s size.
+
+The worst-case scenario for insertion into an array—that is, the scenario in which insertion takes the most steps—is when we insert data at the beginning of the array. This is because when inserting at the beginning of the array, we have to move all the other values one cell to the right. This is because computer allocates continuous space in memory for an array
+
+We can say that insertion in a worst-case scenario can take N + 1 steps for an array containing N elements. This is because we need to shift all N elements over, and then finally execute the actual insertion step.
