@@ -69,3 +69,13 @@ This is true due to another fact about computers: when allocating an array, the 
 The worst-case scenario for insertion into an array—that is, the scenario in which insertion takes the most steps—is when we insert data at the beginning of the array. This is because when inserting at the beginning of the array, we have to move all the other values one cell to the right. This is because computer allocates continuous space in memory for an array
 
 We can say that insertion in a worst-case scenario can take N + 1 steps for an array containing N elements. This is because we need to shift all N elements over, and then finally execute the actual insertion step.
+
+Delete:
+
+Let’s say we want to delete "elderberries" to the end of our shopping list. Such an deletion takes just one step.
+
+Lets say we want to delete cucumbers, While the actual deletion of "cucumbers" technically will take just one step, we now have a problem: we have an empty cell sitting smack in the middle of our array. An array is not effective when there are gaps in the middle of it, so to resolve this issue, we need to shift "dates" and "elderberries" to the left. This means our deletion process requires additional steps.
+
+Like insertion, the worst-case scenario of deleting an element is deleting the very first element of the array. This is because index 0 would become empty, and we’d have to shift all the remaining elements to the left to fill the gap.
+
+For an array of five elements, we’d spend one step deleting the first element, and four steps shifting the four remaining elements. For an array of 500 elements, we’d spend one step deleting the first element, and 499 steps shifting the remaining data. We can say then, that for an array containing N elements, the maximum number of steps that deletion would take is N steps.
