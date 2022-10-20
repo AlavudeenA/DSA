@@ -15,6 +15,7 @@ Lets say we want to print elements in array. The first thing to realize is that 
 How much memory our code consumes = space complexity , Hom much time it consumes = time complexity.
 
 We can also express algorithms using plain English to set out the details of the instructions we plan on providing the computer. There are some algorithms have efficient space complexity, some have efficient time complexity, some have both.
+
 Read first 3 chapters - A Common-Sense Guide to Data Structures and Algorithms: Level Up Your Core Programming Skills - Jay Wengrow
 
 Why sorting matters:
