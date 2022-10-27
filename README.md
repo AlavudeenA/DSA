@@ -12,7 +12,7 @@ When applied to computing, an algorithm refers to the set of instructions given 
 
 Big O Notation: Time complexity or Count the Steps
 
-O(1): Pronounced as “Big Oh of 1 or “Oh of 1.” O(1) simply means that the algorithm takes the same number of steps no matter how much data there is. On an old computer, that step may have taken 20 minutes, and on today’s hardware it may take just a nanosecond. But in both cases, the algorithm takes just a single step. 
+O(1): Pronounced as “Big Oh of 1 or “Oh of 1.” O(1) simply means that the algorithm takes the same number of steps no matter how much data there is. On an old computer, that step may have taken 20 minutes, and on today’s hardware it may take just a nanosecond. But in both cases, the algorithm takes just a single step. Ex: Read an element from an array.
 
 O(N): If array is not sorted and in worst case scenario if the element we looking for is found in last cell, then we have to do N checks each cell one at a time. 
 
