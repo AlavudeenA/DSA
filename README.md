@@ -27,7 +27,7 @@ What should technically be O(N^2 / 2) becomes simply O(N^2). Similarly, O(2N) wo
 
 Sorting algorithms :
 
-Selection Sort: Perhaps the simplest approach is to first scan through the input array to identify minimum element and swap its position with first element. Every iteration left most element is sorted and sorted left most element will not be swapped again. Consider first, second, third and so on elements as an element to start with in each iteration. Time Complexity: O(N^2) - but actually O(N^2 / 2)
+Selection Sort: Perhaps the simplest approach is to first scan through the input array to identify minimum element and swap its position with first (or unsorted left most) element. Every iteration left most element is sorted and sorted left most element will not be swapped again. Consider first, second, third and so on elements as an element to start with in each iteration. Time Complexity: O(N^2) - but actually O(N^2 / 2)
 
 Insertion Sort:  It can be viewed as slicker implementation of Selection sort idea of iteratively growing a prefix of the sorted output array. i.e, Consider second, third and so on elements as temp value in each iteration and compare always with its left most sorted array elements from right to left and swap. Time Complexity: O(N^2) - but actually N^2 + 2N - 2
 
