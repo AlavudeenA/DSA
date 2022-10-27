@@ -6,13 +6,13 @@ Why Datastructure matters:
 
   if you’re building a program that needs to deal with lots of data, or a web app used by thousands of people simultaneously, the data structures you         select may affect whether your software runs at all.
   
-Why Alogrithms matters:
+Why Algorithms matters:
 
 When applied to computing, an algorithm refers to the set of instructions given to a computer to achieve a particular task. When we write any code, then, we’re creating algorithms for the computer to follow and execute. Ex., Shortest path, Database indices etc.,
 
 Sorting algorithms :
 
-Selection Sort: Perhaps the simplest approach is to first scan through the input array to identify minimum elemnt and swap its position with first element. Every iteration left most element is sorted and sorted left most elemnt will not be swapped again. Consider first, second, third and so on elements as an element to start with in each iteration. Complexity O(N^2) - but actually - O(N^2 / 2)
+Selection Sort: Perhaps the simplest approach is to first scan through the input array to identify minimum element and swap its position with first element. Every iteration left most element is sorted and sorted left most element will not be swapped again. Consider first, second, third and so on elements as an element to start with in each iteration. Complexity O(N^2) - but actually - O(N^2 / 2)
 
 Insertion Sort:  It can be viewed as slicker implementation of Selection sort idea of iteratively growing a prefix of the sorted output array. i.e, Consider second, third and so on elements as temp value in each iteration and compare always with its left most sorted array elements from right to left and swap. Complexity O(N^2) - but actually -N^2 + 2N - 2
 
