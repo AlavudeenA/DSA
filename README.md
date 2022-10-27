@@ -16,12 +16,12 @@ O(1): Pronounced as “Big Oh of 1 or “Oh of 1.” O(1) simply means that the 
 
 O(N): If array is not sorted and in worst case scenario if the element we looking for is found in last cell, then we have to do N checks each cell one at a time. 
 
-O(N^2): for N data elements, there are roughly N2 steps.
+O(N^2): for N data elements, there are roughly N^2 steps.
 
 O(log N) : Recall that O(N) means that for N data elements, the algorithm would take N steps. If there are 8 elements, the algorithm would take 8 steps. In a sorted array, O(log N) means that for N data elements, the algorithm would take log2 N steps. If there are 8 elements, the algorithm would take 3 steps, since log2 8= 3. Said another way, if we keep dividing the 8 elements in half, it would take us 3 steps until we end up with one element. This is called Binary Search. Binary search works on sorted array.
 
 Big O Notation ignores constants. This is simply a mathematical way of saying that Big O Notation never includes regular numbers that aren’t an exponent.
-What should technically be O(N^2 / 2) becomes simply O(N2). Similarly, O(2N) would become O(N), and O(N / 2) would also become O(N). Even O(100N), which is 100 times slower than O(N), would also be referred to as O(N).
+What should technically be O(N^2 / 2) becomes simply O(N^2). Similarly, O(2N) would become O(N), and O(N / 2) would also become O(N). Even O(100N), which is 100 times slower than O(N), would also be referred to as O(N).
 
 Sorting algorithms :
 
@@ -31,7 +31,7 @@ Insertion Sort:  It can be viewed as slicker implementation of Selection sort id
 
 Bubble Sort: Identify adjacent pairs of elements that are out of order and perform repeated swaps until the array is sorted. Consider first, second, third and so on elements as an element to start with in each iteration. Time Complexity: O(N^2).
 
-Average case of Insertion sort: if Insertion Sort takes N^2 steps for the worst case scenario, we’d say that it takes about N^2 / 2 steps for the average scenario. (In terms of Big O, however, both scenarios are O(N2).) This variance is because - in insertion sort - some passthroughs compare all the data to the left of the temp_value, while other passthroughs end early, due to encountering a value that is less than the temp_value.
+Average case of Insertion sort: if Insertion Sort takes N^2 steps for the worst case scenario, we’d say that it takes about N^2 / 2 steps for the average scenario. (In terms of Big O, however, both scenarios are O(N^2).) This variance is because - in insertion sort - some passthroughs compare all the data to the left of the temp_value, while other passthroughs end early, due to encountering a value that is less than the temp_value.
 
 So far which is better - Selection Sort or Insertion Sort? The answer is: Well, it depends. In an average case - where an array is randomly sorted - they perform
 similarly. If you have reason to assume that you’ll be dealing with data that is mostly sorted, Insertion Sort will be a better choice. If you have reason to
