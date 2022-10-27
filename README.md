@@ -1,6 +1,6 @@
 Why DSA Matters :
 
-  DSA is applied in problem-solving and enables developers to learn to write efficient code. The quality of the code can be judged by how much memory and     time it consumes. The lesser memory the code consumes and the faster it runs, the more efficient it is. How much memory our code consumes is determined by space complexity , Hom much time it consumes is determined by time complexity.
+  DSA is applied in problem-solving and enables developers to learn to write efficient code. The quality of the code can be judged by how much memory and time it consumes. The lesser memory the code consumes and the faster it runs, the more efficient it is. How much memory our code consumes is determined by space complexity and How much time it consumes is determined by time complexity.
 
 Why Datastructure matters:
 
@@ -8,7 +8,7 @@ Why Datastructure matters:
   
 Why Alogrithms matters:
 
-When applied to computing, an algorithm refers to the set of instructions given to a computer to achieve a particular task. When we write any code, then, we’re creating algorithms for the computer to follow and execute.
+When applied to computing, an algorithm refers to the set of instructions given to a computer to achieve a particular task. When we write any code, then, we’re creating algorithms for the computer to follow and execute. Ex., Shortest path, Database indices etc.,
 
 Sorting algorithms :
 
