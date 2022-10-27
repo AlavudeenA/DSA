@@ -20,7 +20,7 @@ Bubble Sort: Identify adjacent pairs of elements that are out of order and perfo
 
 Average case of Insertion sort: if Insertion Sort takes N^2 steps for the worst case scenario, we’d say that it takes about N^2 / 2 steps for the average scenario. (In terms of Big O, however, both scenarios are O(N2).) This variance is because - in insertion sort - some passthroughs compare all the data to the left of the temp_value, while other passthroughs end early, due to encountering a value that is less than the temp_value.
 
-So which is better - Selection Sort or Insertion Sort? The answer is: Well, it depends. In an average case - where an array is randomly sorted - they perform
+So far which is better - Selection Sort or Insertion Sort? The answer is: Well, it depends. In an average case - where an array is randomly sorted - they perform
 similarly. If you have reason to assume that you’ll be dealing with data that is mostly sorted, Insertion Sort will be a better choice. If you have reason to
 assume that you’ll be dealing with data that is mostly sorted in reverse order, Selection Sort will be faster. If you have no idea what the data will be like,
 that’s essentially an average case, and both will be equal.
@@ -28,6 +28,7 @@ that’s essentially an average case, and both will be equal.
 Searching: 
 
 Linear Search: If array is not sorted and in worst case if the element we have to find is placed as a last elemnt of of an array, we have to do N checks each cell one at a time.
+
 Binary Search O(log N) : Array should already be sorted. Recall that O(N) means that for N data elements, the algorithm would take N steps. If there are 8 elements, the algorithm would take 8 steps. O(log N) means that for N data elements, the algorithm would take log2 N steps. If there are 8 elements, the algorithm would take 3 steps, since log2 8= 3. Said another way, if we keep dividing the 8 elements in half, it would take us 3 steps until we end up with one element.
 
 
