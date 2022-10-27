@@ -10,6 +10,16 @@ Why Algorithms matters:
 
 When applied to computing, an algorithm refers to the set of instructions given to a computer to achieve a particular task. When we write any code, then, we’re creating algorithms for the computer to follow and execute. Ex., Shortest path, Database indices etc.,
 
+Big O Notation: Time complexity or Count the Steps
+
+O(1): Pronounced as “Big Oh of 1 or “Oh of 1.” O(1) simply means that the algorithm takes the same number of steps no matter how much data there is. On an old computer, that step may have taken 20 minutes, and on today’s hardware it may take just a nanosecond. But in both cases, the algorithm takes just a single step. 
+O(N): If array is not sorted and in worst case scenario if the element we looking for is found in last cell, then we have to do N checks each cell one at a time. 
+O(N^2): for N data elements, there are roughly N2 steps.
+O(log N) : Recall that O(N) means that for N data elements, the algorithm would take N steps. If there are 8 elements, the algorithm would take 8 steps. In a sorted array, O(log N) means that for N data elements, the algorithm would take log2 N steps. If there are 8 elements, the algorithm would take 3 steps, since log2 8= 3. Said another way, if we keep dividing the 8 elements in half, it would take us 3 steps until we end up with one element. This is called Binary Search. Binary search works on sorted array.
+
+Big O Notation ignores constants. This is simply a mathematical way of saying that Big O Notation never includes regular numbers that aren’t an exponent.
+In our case, what should technically be O(N2 / 2) becomes simply O(N2). Similarly, O(2N) would become O(N), and O(N / 2) would also become O(N). Even O(100N), which is 100 times slower than O(N), would also be referred to as O(N).
+
 Sorting algorithms :
 
 Selection Sort: Perhaps the simplest approach is to first scan through the input array to identify minimum element and swap its position with first element. Every iteration left most element is sorted and sorted left most element will not be swapped again. Consider first, second, third and so on elements as an element to start with in each iteration. Time Complexity: O(N^2) - but actually O(N^2 / 2)
@@ -24,14 +34,6 @@ So far which is better - Selection Sort or Insertion Sort? The answer is: Well, 
 similarly. If you have reason to assume that you’ll be dealing with data that is mostly sorted, Insertion Sort will be a better choice. If you have reason to
 assume that you’ll be dealing with data that is mostly sorted in reverse order, Selection Sort will be faster. If you have no idea what the data will be like,
 that’s essentially an average case, and both will be equal.
-
-Searching: 
-
-Linear Search O(N): If array is not sorted and in worst case scenario if the element we looking for is found in last cell, then we have to do N checks each cell one at a time. 
-
-Binary Search O(log N) : Recall that O(N) means that for N data elements, the algorithm would take N steps. If there are 8 elements, the algorithm would take 8 steps. In a sorted array, O(log N) means that for N data elements, the algorithm would take log2 N steps. If there are 8 elements, the algorithm would take 3 steps, since log2 8= 3. Said another way, if we keep dividing the 8 elements in half, it would take us 3 steps until we end up with one element.
-
-
 
 
 
