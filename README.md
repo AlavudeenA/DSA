@@ -13,8 +13,11 @@ When applied to computing, an algorithm refers to the set of instructions given 
 Big O Notation: Time complexity or Count the Steps
 
 O(1): Pronounced as “Big Oh of 1 or “Oh of 1.” O(1) simply means that the algorithm takes the same number of steps no matter how much data there is. On an old computer, that step may have taken 20 minutes, and on today’s hardware it may take just a nanosecond. But in both cases, the algorithm takes just a single step. 
+
 O(N): If array is not sorted and in worst case scenario if the element we looking for is found in last cell, then we have to do N checks each cell one at a time. 
+
 O(N^2): for N data elements, there are roughly N2 steps.
+
 O(log N) : Recall that O(N) means that for N data elements, the algorithm would take N steps. If there are 8 elements, the algorithm would take 8 steps. In a sorted array, O(log N) means that for N data elements, the algorithm would take log2 N steps. If there are 8 elements, the algorithm would take 3 steps, since log2 8= 3. Said another way, if we keep dividing the 8 elements in half, it would take us 3 steps until we end up with one element. This is called Binary Search. Binary search works on sorted array.
 
 Big O Notation ignores constants. This is simply a mathematical way of saying that Big O Notation never includes regular numbers that aren’t an exponent.
