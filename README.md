@@ -21,7 +21,7 @@ O(N^2): for N data elements, there are roughly N2 steps.
 O(log N) : Recall that O(N) means that for N data elements, the algorithm would take N steps. If there are 8 elements, the algorithm would take 8 steps. In a sorted array, O(log N) means that for N data elements, the algorithm would take log2 N steps. If there are 8 elements, the algorithm would take 3 steps, since log2 8= 3. Said another way, if we keep dividing the 8 elements in half, it would take us 3 steps until we end up with one element. This is called Binary Search. Binary search works on sorted array.
 
 Big O Notation ignores constants. This is simply a mathematical way of saying that Big O Notation never includes regular numbers that aren’t an exponent.
-In our case, what should technically be O(N2 / 2) becomes simply O(N2). Similarly, O(2N) would become O(N), and O(N / 2) would also become O(N). Even O(100N), which is 100 times slower than O(N), would also be referred to as O(N).
+What should technically be O(N^2 / 2) becomes simply O(N2). Similarly, O(2N) would become O(N), and O(N / 2) would also become O(N). Even O(100N), which is 100 times slower than O(N), would also be referred to as O(N).
 
 Sorting algorithms :
 
