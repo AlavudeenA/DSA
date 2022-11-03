@@ -1,0 +1,13 @@
+How to identify whether we can solve a given problem or part of the problmes with Recursion:
+  We can solve problems with recursion when it can be broken into smaller and repetitive problems.
+  
+What to keep in mind when we code?
+  Until get used, before attempting write code draw tree diagrams and picturise calls with calling time code output and returning time code output.
+  Arguments getting passed in each call and how it retained for each call on its own
+  Variables we create in body of the function
+  Return type of the function
+  Base condition -> We need base condition to stop the call at one point. The basic rule to determine the base condition is at what point we have to stop or we know the answer for that call
+  Calling time code get executed before recursive call. Aka Ascending time
+  Returnign time code get executed after recursive call. Aka Descending time.
+  
+    
