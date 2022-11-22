@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +13,8 @@ namespace Rec
         static int sum = 0;
         static void Main(string[] args)
         {
+            var result = SumOfArray(numbers, 0 , numbers.Length - 1);
+            //PrintAscDes(5);
             //int result = fib(4);
             //int result = BS(0, numbers.Length - 1);
             //int result = SumofD(digit);
@@ -24,13 +26,81 @@ namespace Rec
             //Bubble(arr, arr.Length - 1, 0);
             //Selection(arr, arr.Length, 0, 0);
             //MergeSort(arr);
-            MergeSortInPlace(arr, 0, arr.Length);
+            //MergeSortInPlace(arr, 0, arr.Length);
+            QSort(arr, 0 , arr.Length - 1);
+            Console.WriteLine(string.Join("\n", arr));
         }
+
+        static void QSort(int[] nums, int low, int hi){
+
+            if(low >= hi) {
+                return;
+            }
+
+            int s = low;
+            int e = hi;
+            int m = (s + e)/2;
+            int pivot = nums[m];
+
+            while(s <= e) {
+                while(nums[s] < pivot) {
+                    s++;
+                }
+                while(nums[e] > pivot) {
+                    e--;
+                }
+
+                if(s <= e)
+                {
+                    int temp = nums[s];
+                    nums[s] = nums[e];
+                    nums[e] = temp;
+                    s++;
+                    e--;
+                }
+            }
+
+            QSort(nums, low, e);
+            QSort(nums, s, hi);
+        }
+
+        static int SumOfArray(int[] arr, int s, int e)
+        {
+            if (s == arr.Length - 1)
+                return arr[s];
+            return arr[s] + SumOfArray(arr, s + 1, arr.Length - 1);
+        }
+        static void Print(int n)
+        {
+            if (n == 0)
+                return;
+
+            Print(n - 1);
+            Console.WriteLine(n);
+        }
+        static void PrintDes(int n)
+        {
+            if (n == 0)
+                return;
+
+            Console.WriteLine(n);
+            PrintDes(n - 1);
+        }
+        static void PrintAscDes(int n)
+        {
+            if (n == 0)
+                return;
+
+            Console.WriteLine(n);
+            PrintAscDes(n - 1);
+            Console.WriteLine(n);
+        }
+
         static void MergeSortInPlace(int[] arr, int s, int e)
         {
             if (e - s == 1) return;
 
-            int m = (s+e)/2;
+            int m = (s + e) / 2;
 
             MergeSortInPlace(arr, s, m);
 
@@ -75,7 +145,7 @@ namespace Rec
 
             for (int l = 0; l < mix.Length; l++)
             {
-                arr[s+l] = mix[l];  
+                arr[s + l] = mix[l];
             }
         }
         static int[] MergeSort(int[] arr)
@@ -147,9 +217,11 @@ namespace Rec
             if (r == 0) return;
             if (c < r)
             {
-                int temp = arr[c + 1];
-                arr[c + 1] = arr[c];
-                arr[c] = temp;
+                if(arr[c] > arr[c+1]) {
+                    int temp = arr[c + 1];
+                    arr[c + 1] = arr[c];
+                    arr[c] = temp;
+                }
                 Bubble(arr, r, ++c);
             }
             else
@@ -214,10 +286,10 @@ namespace Rec
         static int SumofD(int digit)
         {
             int lastNumberInDigit = digit % 10;
-            int numberWithItsLastNumber = digit / 10;
-            if (numberWithItsLastNumber <= 0)
+            int numberWithOutItsLastNumber = digit / 10;
+            if (numberWithOutItsLastNumber <= 0)
                 return digit;
-            return lastNumberInDigit + SumofD(numberWithItsLastNumber);
+            return lastNumberInDigit + SumofD(numberWithOutItsLastNumber);
         }
 
         static void ReverseD(int digit) // outside value is updated, hence no need to return value; number is palindrome if n == ReverseD(n);
